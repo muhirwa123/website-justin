@@ -1,0 +1,442 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  padding-top: 15%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;background-image: url(pic.png);
+  
+}
+
+/* Header */
+header {
+  background-color: #004d40;
+  color:brown;
+  padding: 1rem;
+  text-align: center;
+}
+
+header img {
+  height: 100px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-weight: bold;
+  flex-direction: column;
+  font-size: 1.6rem;
+  margin: 10px 0;
+  font-style: italic;
+  color: red;
+  background-color: #b2dfdb;
+}
+.ed {
+  font-weight: bold;
+  size: 10 px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+header nav a {
+  color: #b2dfdb;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffab91;
+}
+
+/* Section Styles */
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px; /* Center the sections */
+  background-color: white; /* White background for sections */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Headings */
+h2 {
+  color: cadetblue;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: hotpink;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 16px; /* Increased font size for readability */
+  margin: 1rem 0;
+}
+
+/* List Styles */
+ul {
+  list-style-type: square; /* Custom list style */
+  padding-left: 20px; /* Indent for list items */
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+/* Impact Stories */
+blockquote {
+  background-color: #e0f7fa; /* Light blue background for quotes */
+  border-left: 5px solid hotpink; /* Colorful border on the left */
+  padding: 1rem;
+  margin: 1rem 0;
+  font-style: italic; /* Italics for emphasis */
+}
+
+/* Get Involved Section */
+#get-involved {
+  background-color: #e8f5e9; /* Light green background for action items */
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+#transformation{
+  margin-bottom: 50px;
+}
+#protection{
+  margin-bottom: 50px;
+}
+
+#our-mission{
+  margin-bottom: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header img {
+      height: 80px; /* Smaller image on mobile */
+  }
+
+  nav a {
+      margin: 0 10px; /* Reduced spacing for mobile */
+  }
+
+  section {
+      padding: 1rem; /* Less padding on mobile */
+      margin: 0.5rem; /* Less margin on mobile */
+  }
+
+  h2 {
+      font-size: 24px; /* Adjust heading size for mobile */
+  }
+
+  h3 {
+      font-size: 20px; /* Adjust subheading size for mobile */
+  }
+}
+
+/* Main Sections */
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section ul li {
+  background-color: #e0f7fa;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+}
+
+/* Contact Form */
+#contactForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contactForm label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contactForm button {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  background-color: #004d40;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background-color: #00695c;
+}
+#contact{
+  margin-bottom: 50px;
+}
+
+/* Footer */
+.footer {
+  color: blue;
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  size: 20px ;
+  font-size: 0.9rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;;
+  height: 5%;
+}
+.footerx {
+ 
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  
+}
+
+/* Base header style */
+.footerx {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem; /* Adjusted for desktop */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto; /* Allows for resizing */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments for header on medium screens */
+@media (max-width: 768px) {
+  .footerx {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .footerx img {
+    height: 60px; /* Smaller logo size */
+  }
+
+  header nav {
+    gap: 10px;
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  header h1 {
+    font-size: 1.2rem; /* Smaller title */
+  }
+}
+
+/* Responsive adjustments for header on small screens */
+@media (max-width: 480px) {
+  .footerx {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+
+  .footerx img {
+    height: 50px; /* Smaller logo for mobile */
+  }
+
+  header h1 {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column; /* Stacks links */
+    gap: 5px;
+  }
+}
+
+/* Add margin-top to the main content to offset the header */
+body {
+  margin-top: 120px; /* Offset for the header */
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 180px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-top: 180px;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/*  */
+
+/* Media Query for Tablets */
+@media (max-width: 1024px) {
+  body {
+    padding-top: 40%; /* Adjust padding to improve spacing */
+  }
+
+  header img {
+    height: 90px; /* Slightly smaller header image */
+  }
+
+  header h1 {
+    font-size: 1.4rem; /* Smaller font size for the title */
+  }
+
+  section {
+    padding: 1.5rem;
+    margin: 0.8rem auto; /* Reduce margins */
+  }
+
+  #contactForm {
+    max-width: 90%; /* Make the contact form wider */
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  body {
+    padding-top: 45%; /* Increase padding for spacing */
+    padding-bottom: 20%;
+  }
+
+  header h1 {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 10px; /* Stack navigation links vertically */
+  }
+
+  section {
+    padding: 1rem;
+    margin: 0.5rem auto;
+    max-width: 90%; /* Reduce max-width */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Adjust subheading size */
+  }
+
+  footer {
+    font-size: 0.8rem; /* Smaller footer font */
+  }
+
+  #contactForm {
+    width: 95%;
+  }
+}
+
+/* Media Query for Small Mobile Devices */
+@media (max-width: 480px) {
+  header img {
+    height: 70px; /* Smaller image for small mobile screens */
+  }
+
+  header h1 {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  section p {
+    font-size: 0.85rem;
+  }
+
+  #contactForm {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+}
